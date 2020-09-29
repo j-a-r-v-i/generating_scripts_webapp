@@ -1,0 +1,4 @@
+numpy>=1.18.5
+flask==1.1.2
+torch==1.6.0+cu101
+gunicorn==20.0.4
