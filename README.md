@@ -1,1 +1,0 @@
-# generating_scripts_webapp
