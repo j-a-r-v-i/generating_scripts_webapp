@@ -7,6 +7,7 @@ import problem_unittests as tests
 import numpy as np
 import torch.nn as nn
 
+app=Flask(__name__)
 # Check for a GPU
 train_on_gpu = torch.cuda.is_available()
 if not train_on_gpu:
@@ -178,8 +179,6 @@ def generate(rnn, prime_id, int_to_vocab, token_dict, pad_value, predict_len=100
     # return all the sentences
     return gen_sentences
     
-
-app=Flask(__name__)
 
 @app.route('/')
 def home():
